@@ -7,7 +7,7 @@ entre essas tabelas de acordo com as regras projetadas para proteger
 os dados e tornar o banco de dados mais flexível,
 eliminando a redundância e a dependência inconsistente.
 
-Primeiro formulário normal
+Primeira forma normal
 - Eliminar grupos repetidos em tabelas individuais.
 {mas de um campo de endereco}
 - Crie uma tabela separada para cada conjunto de dados relacionados.
@@ -15,7 +15,7 @@ Primeiro formulário normal
 - Identifique cada conjunto de dados relacionados com uma chave primária.
 {uma chave etrangeira ligando os esderecos}
 
-Segundo formulário normal
+Segunda forma normal
 - Crie tabelas separadas para conjuntos de valores que se aplicam a vários registros.
 {o mesmo end se aplica a varios lugares, end do cliente, end de entrega,end de fatura ...}
 {entao separa a o end na tabela}
