@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  python:
+    container_name: py
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./python:/python
+    stdin_open: true
+    tty: true
