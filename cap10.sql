@@ -13,7 +13,12 @@ FROM pessoas
 INNER JOIN telefones ON pessoas.id = telefones.pessoa_id and telefones.tipo = 'Comercial'
 -- so tras as pessoas que tem tefones comerciais
 -- so tras os telefones que sao comercias
-
+SELECT pessoas.nome_completo , telefones.numero
+FROM pessoas
+FULL OUTER JOIN telefones ON pessoas.id = telefones.pessoa_id AND telefones.tipo = 'Comercial' ;
+-- o full join tras os dados null dos dois lados da tabela
+-- por isso ele nao e muito util
+-- lembra muito o cross join
 -- ##### ATENCAO ##### --
 /*
  * A RESTRICAO 'telefones.tipo = 'Comercial'' DEVE SER UM AND SEGUIDA AO ON DO LEFT/RIGHT JOIN
