@@ -111,3 +111,20 @@ AND (
 )
 ORDER BY altura DESC
 LIMIT 1;
+
+/*
+O HAVING é uma cláusula SQL que é usada em conjunto com a cláusula GROUP BY 
+para filtrar os resultados de uma consulta que contém funções de agregação, 
+como COUNT, SUM, AVG, MAX e MIN. 
+Ele permite aplicar condições de filtro às linhas agrupadas resultantes de uma consulta GROUP BY.
+
+A sintaxe básica é: HAVING condição.
+A condição pode ser qualquer expressão lógica que você deseja aplicar aos grupos resultantes.
+O HAVING deve sempre ser usado após a cláusula GROUP BY.
+Usos Mais Comuns:
+
+Contagem Condicional: Filtrar grupos com base em uma contagem específica, como no exemplo fornecido.
+Filtragem por Soma: Filtrar grupos com base na soma de valores em uma coluna.
+Filtragem por Média: Filtrar grupos com base na média de valores em uma coluna.
+Filtragem por Valor Máximo ou Mínimo: Filtrar grupos com base no valor máximo ou mínimo em uma coluna.
+
