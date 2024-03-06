@@ -7,9 +7,9 @@ services:
     image: postgres:16-bookworm
     restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: '1234'
-      POSTGRES_DB: teste
+      POSTGRES_USER: usuario # Nome do usuario root
+      POSTGRES_PASSWORD: '1234' # Senha do usuario root
+      POSTGRES_DB: banco # Nome do banco de dados.
     volumes:
       - data:/var/lib/postgresql/data
     ports:
